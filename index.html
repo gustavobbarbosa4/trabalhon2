@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados do Cliente</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Dados do Cliente</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">Nome: João da Silva</li>
+                    <li class="list-group-item">Conta Corrente: R$ 10.000,00</li>
+                    <li class="list-group-item">Poupança: R$ 5.000,00</li>
+                    <li class="list-group-item">Cartão de Crédito: R$ 2.000,00 (limite: R$ 10.000,00)</li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <h2>Extrato de Transações</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Descrição</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10/06/2024</td>
+                            <td>Compra Supermercado</td>
+                            <td>- R$ 150,00</td>
+                        </tr>
+                        <tr>
+                            <td>09/06/2024</td>
+                            <td>Depósito</td>
+                            <td>+ R$ 1.000,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>Contratar Serviços</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="servico">Serviço</label>
+                        <select class="form-control" id="servico">
+                            <option>Investimentos</option>
+                            <option>Empréstimos</option>
+                            <option>Financiamentos</option>
+                            <option>Previdência</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="valor">Valor</label>
+                        <input type="number" class="form-control" id="valor" placeholder="Valor do serviço">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Contratar</button>
+                </form>
+
+                <h2>Realizar Transações</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="tipoTransacao">Tipo de Transação</label>
+                        <select class="form-control" id="tipoTransacao">
+                            <option>Pix</option>
+                            <option>Transferência</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="valorTransacao">Valor</label>
+                        <input type="number" class="form-control" id="valorTransacao" placeholder="Valor da transação">
+                    </div>
+                    <div class="form-group">
+                        <label for="contaDestino">Conta Destino</label>
+                        <input type="text" class="form-control" id="contaDestino" placeholder="Conta destino">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Realizar Transação</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
